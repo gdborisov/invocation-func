@@ -162,7 +162,6 @@ public class Function
             }
         };
 
-
         var response = await client.QueryAsync(request);
 
         Console.WriteLine($"Query returned {response.Count} items.");
@@ -196,5 +195,4 @@ public class Function
             Console.WriteLine($"Item: {string.Join(", ", item.Select(kv => $"{kv.Key} = {kv.Value}"))}");
         }
     }
-
 }
